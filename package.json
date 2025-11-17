@@ -1,0 +1,27 @@
+{
+  "name": "trouveuncadeau-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "TrouveUnCadeau.xyz - Plateforme e-commerce intelligente avec IA multi-agents",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "@turbo/gen": "^1.11.0",
+    "prettier": "^3.1.0",
+    "turbo": "^1.11.0"
+  },
+  "packageManager": "pnpm@8.10.0",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}
